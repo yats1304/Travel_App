@@ -230,104 +230,108 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(height: 20),
-            Center(
-              child: Stack(
-                children: [
-                  Container(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(30),
-                      child: Image.asset(
-                        "images/brazil.jpg",
-                        height: 450,
-                        width: 380,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 450,
-                    width: 380,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [
-                          Color.fromARGB(26, 0, 0, 0),
-                          const Color.fromARGB(143, 0, 0, 0),
-                        ],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 20),
-                    margin: EdgeInsets.only(right: 30, top: 20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+            asia
+                ? Center(
+                    child: Stack(
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Colors.white),
-                                borderRadius: BorderRadius.circular(60),
-                              ),
-                              child: Icon(
-                                Icons.favorite_outline,
-                                color: Colors.white,
-                                size: 30,
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 220),
-                        Text(
-                          "Brazil",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: "Popins",
-                            fontSize: 20,
-                          ),
-                        ),
-                        Text(
-                          "South America",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: "Popins",
-                            fontSize: 24,
-                          ),
-                        ),
-                        SizedBox(height: 10),
                         Container(
-                          padding: EdgeInsets.only(right: 10),
-                          height: 60,
-                          decoration: BoxDecoration(
-                            color: const Color.fromARGB(116, 0, 0, 0),
-                            borderRadius: BorderRadius.circular(60),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(30),
+                            child: Image.asset(
+                              "images/bali.jpg",
+                              height: 450,
+                              width: 380,
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                          child: Row(
+                        ),
+                        Container(
+                          height: 450,
+                          width: 380,
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                Color.fromARGB(26, 0, 0, 0),
+                                const Color.fromARGB(143, 0, 0, 0),
+                              ],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 20),
+                          margin: EdgeInsets.only(right: 30, top: 20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Spacer(),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.white),
+                                      borderRadius: BorderRadius.circular(60),
+                                    ),
+                                    child: Icon(
+                                      Icons.favorite_outline,
+                                      color: Colors.white,
+                                      size: 30,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 220),
                               Text(
-                                "See More",
+                                "Bali",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: "Popins",
                                   fontSize: 20,
                                 ),
                               ),
-                              SizedBox(width: 70),
-                              Container(
-                                padding: EdgeInsets.all(10),
-                                decoration: BoxDecoration(
+                              Text(
+                                "Indonesia",
+                                style: TextStyle(
                                   color: Colors.white,
+                                  fontFamily: "Popins",
+                                  fontSize: 24,
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                              Container(
+                                padding: EdgeInsets.only(right: 10),
+                                height: 60,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(116, 0, 0, 0),
                                   borderRadius: BorderRadius.circular(60),
                                 ),
-                                child: Icon(
-                                  Icons.arrow_forward_ios,
-                                  color: Colors.black,
+                                child: Row(
+                                  children: [
+                                    Spacer(),
+                                    Text(
+                                      "See More",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: "Popins",
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    SizedBox(width: 70),
+                                    Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(60),
+                                      ),
+                                      child: Icon(
+                                        Icons.arrow_forward_ios,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
@@ -335,6 +339,263 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
+                  )
+                : europe
+                ? Center(
+                    child: Stack(
+                      children: [
+                        Container(
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(30),
+                            child: Image.asset(
+                              "images/france.jpg",
+                              height: 450,
+                              width: 380,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 450,
+                          width: 380,
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                Color.fromARGB(26, 0, 0, 0),
+                                const Color.fromARGB(143, 0, 0, 0),
+                              ],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 20),
+                          margin: EdgeInsets.only(right: 30, top: 20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.white),
+                                      borderRadius: BorderRadius.circular(60),
+                                    ),
+                                    child: Icon(
+                                      Icons.favorite_outline,
+                                      color: Colors.white,
+                                      size: 30,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 220),
+                              Text(
+                                "France",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: "Popins",
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Text(
+                                "Europe",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: "Popins",
+                                  fontSize: 24,
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                              Container(
+                                padding: EdgeInsets.only(right: 10),
+                                height: 60,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(116, 0, 0, 0),
+                                  borderRadius: BorderRadius.circular(60),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Spacer(),
+                                    Text(
+                                      "See More",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: "Popins",
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    SizedBox(width: 70),
+                                    Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(60),
+                                      ),
+                                      child: Icon(
+                                        Icons.arrow_forward_ios,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                : Center(
+                    child: Stack(
+                      children: [
+                        Container(
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(30),
+                            child: Image.asset(
+                              "images/brazil.jpg",
+                              height: 450,
+                              width: 380,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 450,
+                          width: 380,
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                Color.fromARGB(26, 0, 0, 0),
+                                const Color.fromARGB(143, 0, 0, 0),
+                              ],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 20),
+                          margin: EdgeInsets.only(right: 30, top: 20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.white),
+                                      borderRadius: BorderRadius.circular(60),
+                                    ),
+                                    child: Icon(
+                                      Icons.favorite_outline,
+                                      color: Colors.white,
+                                      size: 30,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 220),
+                              Text(
+                                "Brazil",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: "Popins",
+                                  fontSize: 20,
+                                ),
+                              ),
+                              Text(
+                                "South America",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: "Popins",
+                                  fontSize: 24,
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                              Container(
+                                padding: EdgeInsets.only(right: 10),
+                                height: 60,
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(116, 0, 0, 0),
+                                  borderRadius: BorderRadius.circular(60),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Spacer(),
+                                    Text(
+                                      "See More",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: "Popins",
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    SizedBox(width: 70),
+                                    Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(60),
+                                      ),
+                                      child: Icon(
+                                        Icons.arrow_forward_ios,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+            SizedBox(height: 30),
+            Container(
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.only(left: 30, right: 30),
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(60),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    height: 60,
+                    width: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(60),
+                    ),
+                    child: Icon(Icons.home_outlined, size: 30),
+                  ),
+                  SizedBox(width: 40),
+                  Icon(
+                    Icons.favorite_outline,
+                    size: 35,
+                    color: Color.fromARGB(191, 255, 255, 255),
+                  ),
+                  SizedBox(width: 40),
+                  Icon(
+                    Icons.person_outline,
+                    size: 35,
+                    color: Color.fromARGB(191, 255, 255, 255),
+                  ),
+                  SizedBox(width: 40),
+                  Icon(
+                    Icons.shopping_cart_outlined,
+                    size: 35,
+                    color: Color.fromARGB(191, 255, 255, 255),
                   ),
                 ],
               ),
