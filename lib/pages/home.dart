@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelapp/pages/detail_page.dart';
 import 'package:travelapp/services/support_widget.dart';
 
 class Home extends StatefulWidget {
@@ -527,30 +528,43 @@ class _HomeState extends State<Home> {
                                   color: const Color.fromARGB(116, 0, 0, 0),
                                   borderRadius: BorderRadius.circular(60),
                                 ),
-                                child: Row(
-                                  children: [
-                                    Spacer(),
-                                    Text(
-                                      "See More",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: "Popins",
-                                        fontSize: 20,
+
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => DetailPage(),
                                       ),
-                                    ),
-                                    SizedBox(width: 70),
-                                    Container(
-                                      padding: EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(60),
+                                    );
+                                  },
+                                  child: Row(
+                                    children: [
+                                      Spacer(),
+                                      Text(
+                                        "See More",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: "Popins",
+                                          fontSize: 20,
+                                        ),
                                       ),
-                                      child: Icon(
-                                        Icons.arrow_forward_ios,
-                                        color: Colors.black,
+                                      SizedBox(width: 70),
+                                      Container(
+                                        padding: EdgeInsets.all(10),
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(
+                                            60,
+                                          ),
+                                        ),
+                                        child: Icon(
+                                          Icons.arrow_forward_ios,
+                                          color: Colors.black,
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
